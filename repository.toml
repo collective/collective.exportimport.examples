@@ -1,0 +1,37 @@
+[repository]
+name = "migration-example-project"
+managed_by_uv = false
+changelog = "CHANGELOG.md"
+version = "version.txt"
+compose = "docker-compose.yml"
+
+[repository.towncrier]
+section = "Project"
+settings = "towncrier.toml"
+
+[backend]
+path = "backend"
+
+[backend.package]
+name = "collective.eximportimport.examples"
+path = "backend"
+changelog = "backend/CHANGELOG.md"
+towncrier_settings = "backend/pyproject.toml"
+base_package = "Products.CMFPlone"
+publish = false
+
+[frontend]
+path = "frontend"
+
+[frontend.package]
+name = "volto-collective-eximportimport-examples"
+path = "frontend/packages/volto-collective-eximportimport-examples"
+changelog = "frontend/packages/volto-collective-eximportimport-examples/CHANGELOG.md"
+towncrier_settings = "frontend/packages/volto-collective-eximportimport-examples/towncrier.toml"
+base_package = "@plone/volto"
+publish = false
+
+[cookieplone]
+template = "project"
+template_version = "aa393a7ee0edebd4d917544a0141d568c6832daa"
+generated_date = "2025-09-10 09:59:10"

@@ -1,0 +1,39 @@
+{
+  "name": "volto-collective-eximportimport-examples",
+  "version": "1.0.0-alpha.0",
+  "description": "A project used as an example for a migration from Plone 5.2 with mosaic to Plone 6 with Volto.",
+  "main": "src/index.js",
+  "license": "MIT",
+  "keywords": [
+    "volto-addon",
+    "volto",
+    "plone",
+    "react"
+  ],
+  "author": "Adrian Schulz",
+  "homepage": "https://github.com/collective/migration-example-project#readme",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:collective/migration-example-project"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "i18n": "rm -rf build/messages && NODE_ENV=production i18n --addon",
+    "dry-release": "release-it --dry-run",
+    "release": "release-it",
+    "release-major-alpha": "release-it major --preRelease=alpha",
+    "release-alpha": "release-it --preRelease=alpha"
+  },
+  "addons": [],
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@plone/scripts": "^3.6.1",
+    "release-it": "^17.1.1"
+  }
+}
