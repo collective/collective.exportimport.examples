@@ -1,0 +1,24 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    >
+
+  <browser:page
+      name="custom_export_content"
+      for="zope.interface.Interface"
+      class=".export_content.CustomExportContent"
+      permission="cmf.ManagePortal"
+      />
+
+
+  <browser:page
+      name="export_all"
+      for="*"
+      class=".export_all.ExportAll"
+      template="export_all.pt"
+      permission="cmf.ManagePortal"
+      />
+
+</configure>

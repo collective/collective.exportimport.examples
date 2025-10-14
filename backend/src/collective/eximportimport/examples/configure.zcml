@@ -22,5 +22,8 @@
   <include package=".vocabularies" />
 
   <!-- -*- extra stuff goes here -*- -->
+  <include package=".exporting" />
+  <include package=".importing" />
+
 
 </configure>
