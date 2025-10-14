@@ -27,6 +27,9 @@ dependencies = [
     "plone.api",
     "plone.restapi",
     "plone.volto",
+    "collective.exportimport",
+    "plone.app.blocks",
+    "slugify"
 ]
 
 [project.optional-dependencies]

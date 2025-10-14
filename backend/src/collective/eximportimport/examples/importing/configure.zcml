@@ -1,0 +1,40 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    >
+
+  <browser:page
+      name="custom_import_content"
+      for="zope.interface.Interface"
+      class=".import_content.CustomImportContent"
+      template="import_content.pt"
+      permission="cmf.ManagePortal"
+      />
+
+  <browser:page
+      name="custom_import_relations"
+      for="zope.interface.Interface"
+      class=".import_relations.CustomImportRelations"
+      template="import_relations.pt"
+      permission="cmf.ManagePortal"
+      />
+
+  <browser:page
+      name="import_all"
+      for="*"
+      class=".import_all.ImportAll"
+      template="import_all.pt"
+      permission="cmf.ManagePortal"
+      />
+
+  <browser:page
+      name="fix_all"
+      for="*"
+      class=".fix_all.FixAll"
+      template="fix_all.pt"
+      permission="cmf.ManagePortal"
+      />
+
+</configure>
