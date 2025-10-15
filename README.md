@@ -2,8 +2,9 @@
 
 This repository consists of example code for migrating a Plone 5.2 site with mosaic to Plone 6 with Volto.
 
-See `backend/src/collective/eximportimport/examples/exporting/` and `backend/src/collective/eximportimport/examples/importing/` for an example implementation of exporting and importing content based on collective.exportimport.
+See `backend/src/collective/eximportimport/examples/exporting/` and `backend/src/collective/eximportimport/examples/importing/` for an example implementation of exporting and importing content based on collective.exportimport. If you find bugs, have suggestions for improvements, please open an issue.
 
+**Currently there are no running examples!!!**
 
 ## Quick Start 🏁
 
